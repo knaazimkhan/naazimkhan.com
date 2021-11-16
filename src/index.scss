@@ -1,0 +1,72 @@
+html,
+body {
+	border: none;
+	margin: 0 px;
+	padding: 0 px;
+	background-color: rgb(240, 240, 246);
+	color: rgb(118, 118, 118);
+	transition: all 300ms ease-in 0s;
+	box-sizing: border-box;
+	font-family: Inter, sans-serif;
+	font-size: 15px;
+	letter-spacing: -0.015em;
+	text-align: left;
+	scroll-behavior: smooth;
+}
+
+h5 {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 1.5;
+	text-align: inherit;
+	color: rgb(43, 43, 43);
+	transition: all 400ms ease-in 0s;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 500;
+	color: rgb(255, 180, 0);
+}
+
+ul {
+	border: none;
+	font-size: 15px;
+	line-height: inherit;
+	margin: 0px;
+	padding: 0px;
+	text-align: inherit;
+	transition: all 400ms ease-in 0s;
+}
+
+li {
+	border: none;
+	font-size: 15px;
+	line-height: inherit;
+	margin: 0px;
+	padding: 0px;
+	text-align: inherit;
+	transition: all 400ms ease-in 0s;
+}
+
+img {
+	border: none;
+	font-size: 15px;
+	line-height: inherit;
+	margin: 0px;
+	padding: 0px;
+	text-align: inherit;
+	transition: all 400ms ease-in 0s;
+}
+
+button {
+	border: none;
+	font-size: 15px;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+	transition: all 400ms ease-in 0s;
+}
