@@ -10,9 +10,9 @@ const Main = () => {
 				<div className='main__content__banner'>
 					<div className='banner__title'>
 						<h1>
-							I’m Rayan Adlrdard
+							I’m Naazim Khan
 							<br />
-							<span className='primary'>Font – End</span>{' '}
+							<span className='primary'>Font – End </span>
 							Developer
 						</h1>
 						<p>
@@ -27,7 +27,7 @@ const Main = () => {
 						</div>
 					</div>
 					<div className='banner__image'>
-						<img className='' src={NaazimKhan} alt='naazimkhan' />
+						<img src={NaazimKhan} alt='naazimkhan' />
 					</div>
 				</div>
 				<div className='education'>
