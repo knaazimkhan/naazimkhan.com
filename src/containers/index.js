@@ -1,3 +1,3 @@
-export { default as LeftMenu } from './leftmenu/LeftMenu';
-export { default as MainMenu } from './mainmenu/MainMenu';
-export { default as RightMenu } from './rightmenu/RightMenu';
+export { default as LeftSidebar } from './leftsidebar/LeftSidebar';
+export { default as Main } from './main/Main';
+export { default as RightSidebar } from './rightsidebar/RightSidebar';

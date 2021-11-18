@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
 
-import { LeftMenu, MainMenu, RightMenu } from './containers';
+import { LeftSidebar, Main, RightSidebar } from './containers';
 function App() {
 	return (
 		<div className='App'>
-			<LeftMenu />
-			<MainMenu />
-			<RightMenu />
+			<LeftSidebar />
+			<Main />
+			<RightSidebar />
 		</div>
 	);
 }
