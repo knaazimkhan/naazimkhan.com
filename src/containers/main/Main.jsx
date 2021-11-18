@@ -12,7 +12,7 @@ const Main = () => {
 						<h1>
 							I’m Naazim Khan
 							<br />
-							<span className='primary'>Font – End </span>
+							<span className='primary'>Full – Stack</span>{' '}
 							Developer
 						</h1>
 						<p>

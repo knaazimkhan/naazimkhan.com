@@ -17,7 +17,7 @@
 	}
 	.banner {
 		&__title {
-			width: 550px;
+			width: 500px;
 			display: flex;
 			justify-content: start;
 			flex-direction: column;
@@ -28,9 +28,9 @@
 			}
 		}
 		&__image {
-			width: 300px;
+			width: 340px;
 			position: absolute;
-			right: 1%;
+			right: 7%;
 			bottom: -1%;
 			img {
 				width: 100%;
