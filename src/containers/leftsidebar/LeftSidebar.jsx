@@ -1,33 +1,29 @@
 import React from 'react';
 import './leftsidebar.scss';
 
+import PersonalInfo from '../../components/PersonalInfo';
+import Language from '../../components/Language';
+import Skill from '../../components/Skill';
+import ExtraSkill from './../../components/ExtraSkill';
+
 import NaazimKhan from '../../images/naazimkhan.jpg';
-import IconSvg from '../../images/list-icon.svg';
 
 import ResumePdf from '../../assets/resume.pdf';
 
-import {
-	FaNodeJs,
-	FaReact,
-	FaJs,
-	FaLaravel,
-	FaPhp,
-	FaHtml5,
-	FaCss3Alt,
-	FaBootstrap,
-} from 'react-icons/fa';
+import data from '../../data.json';
 
 const LeftSidebar = () => {
+	console.log(data);
 	return (
 		<div className='left__sidebar'>
 			<div className='left__sidebar__header'>
 				<div className='profile__image'>
-					<img className='' src={NaazimKhan} alt='naazimkhan' />
-					<div class='online'></div>
+					<img src={NaazimKhan} alt='naazimkhan' />
+					<div className='online'></div>
 				</div>
 				<div className='profile__title'>
-					<h4>Naazim Khan</h4>
-					<h5>Full Stack Developer</h5>
+					<h4>{data.name}</h4>
+					<h5>{data.profile}</h5>
 				</div>
 				<div className='profile__social'>
 					<div className='social-link-list'>
@@ -139,219 +135,37 @@ const LeftSidebar = () => {
 			</div>
 			<div className='left__sidebar__content'>
 				<ul className='personal__info'>
-					{/* <li>
-						<p>Age:</p>
-						<span>24</span>
-					</li> */}
-					<li>
-						<p>Residence:</p>
-						<span>Jamia Nagar</span>
-					</li>
-					<li>
-						<p>Freelancer:</p>
-						<span className='green'>Avilable</span>
-					</li>
-					<li>
-						<p>Address:</p>
-						<span>New Delhi, India</span>
-					</li>
+					{data &&
+						data.info.map((info, index) => (
+							<PersonalInfo info={info} key={index} />
+						))}
 				</ul>
 				<div className='divider'></div>
 				<div className='language'>
 					<h5>Languages</h5>
-					<div className='language__content'>
-						<div className='item'>
-							<p>Hindi</p>
-							<span>100%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='100%'
-									style={{ width: '100%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					<div className='language__content'>
-						<div className='item'>
-							<p>English</p>
-							<span>80%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='90%'
-									style={{ width: '80%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					{/* <div className='language__content'>
-						<div className='item'>
-							<p>Spanish</p>
-							<span>60%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div width='60%' className='bar'></div>
-							</div>
-						</div>
-					</div> */}
+					{data &&
+						data.languages.map((language, index) => (
+							<Language language={language} key={index} />
+						))}
 				</div>
+
 				<div className='divider'></div>
 				<div className='language'>
 					<h5>Skills</h5>
-					<div className='language__content'>
-						<div className='item'>
-							<p>
-								<FaNodeJs /> Nodejs
-							</p>
-							<span>80%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='80%'
-									style={{ width: '80%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					<div className='language__content'>
-						<div className='item'>
-							<p>
-								<FaReact /> React
-							</p>
-							<span>80%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='80%'
-									style={{ width: '80%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					<div className='language__content'>
-						<div className='item'>
-							<p>
-								<FaJs />
-								Javascript
-							</p>
-							<span>80%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='60%'
-									style={{ width: '80%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					<div className='language__content'>
-						<div className='item'>
-							<p>
-								<FaLaravel />
-								Laravel
-							</p>
-							<span>70%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='60%'
-									style={{ width: '70%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					<div className='language__content'>
-						<div className='item'>
-							<p>
-								<FaPhp />
-								PHP
-							</p>
-							<span>70%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='60%'
-									style={{ width: '70%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					<div className='language__content'>
-						<div className='item'>
-							<p>
-								<FaHtml5 /> HTML
-							</p>
-							<span>80%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='100%'
-									style={{ width: '80%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
-					<div className='language__content'>
-						<div className='item'>
-							<p>
-								<FaCss3Alt />
-								CSS
-							</p>
-							<span>50%</span>
-						</div>
-						<div className='progress'>
-							<div className='progress__bar'>
-								<div
-									width='90%'
-									style={{ width: '50%' }}
-									className='bar'
-								></div>
-							</div>
-						</div>
-					</div>
+					{data &&
+						data.skills.map((skill, index) => (
+							<Skill skill={skill} key={index} />
+						))}
 				</div>
+
 				<div className='divider'></div>
 				<div className='extra__skills'>
 					<h5>Extra Skills</h5>
 					<ul>
-						<li>
-							<img loading='lazy' src={IconSvg} />
-							Anguler, Typescript
-						</li>
-						<li>
-							<img loading='lazy' src={IconSvg} />
-							Bootstrap, Tailwindcss
-						</li>
-						<li>
-							<img loading='lazy' src={IconSvg} />
-							Stylus, Sass, Less
-						</li>
-						<li>
-							<img loading='lazy' src={IconSvg} />
-							Gulp, Webpack, Grunt
-						</li>
-						<li>
-							<img loading='lazy' src={IconSvg} />
-							Git, Bitbucket, Gitlab
-						</li>
+						{data &&
+							data.extra_skill.map((skill, index) => (
+								<ExtraSkill skill={skill} key={index} />
+							))}
 					</ul>
 				</div>
 				<div className='divider'></div>

@@ -1,0 +1,72 @@
+{
+	"name": "Naazim Khan",
+	"profile": "Full Stack Developer",
+	"info": [
+		{
+			"label": "residence",
+			"value": "Jamia Nagar"
+		},
+		{
+			"label": "freelancer",
+			"value": "Avilable"
+		},
+		{
+			"label": "address",
+			"value": "New Delhi, India"
+		}
+	],
+	"languages": [
+		{
+			"name": "Hindi",
+			"percent": "100%"
+		},
+		{
+			"name": "English",
+			"percent": "80%"
+		}
+	],
+	"skills": [
+		{
+			"name": "Nodejs",
+			"percent": "70%",
+			"icon": "FaNodeJs"
+		},
+		{
+			"name": "React",
+			"percent": "70%",
+			"icon": "FaReact"
+		},
+		{
+			"name": "Javascript",
+			"percent": "70%",
+			"icon": "FaJs"
+		},
+		{
+			"name": "Laravel",
+			"percent": "80%",
+			"icon": "FaLaravel"
+		},
+		{
+			"name": "PHP",
+			"percent": "80%",
+			"icon": "FaPhp"
+		},
+		{
+			"name": "HTML",
+			"percent": "90%",
+			"icon": "FaHtml5"
+		},
+		{
+			"name": "CSS",
+			"percent": "50%",
+			"icon": "FaCss3Alt"
+		}
+	],
+	"extra_skill": [
+		"Anguler, Typescript",
+		"Bootstrap, Tailwindcss",
+		"Stylus, Sass, Less",
+		"Gulp, Webpack, Grunt",
+		"Git, Bitbucket, Gitlab"
+	]
+}
