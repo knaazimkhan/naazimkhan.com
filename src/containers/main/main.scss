@@ -71,7 +71,7 @@
 			justify-content: space-between;
 			padding: 1.5rem 0;
 			h4 {
-				margin-bottom: 2rem;
+				margin-bottom: 1rem;
 				font-weight: 600;
 				font-size: 18px;
 				line-height: 1.5;
@@ -82,12 +82,27 @@
 			p {
 				font-size: 15px;
 				line-height: 1.5;
-				margin-bottom: 15 px;
+				margin-bottom: 15px;
 				color: rgb(118, 118, 118);
+			}
+			ul {
+				font-size: 15px;
+				line-height: 1.5;
+				margin-bottom: 15px;
+				color: rgb(118, 118, 118);
+				padding-left: 1rem;
 			}
 			.right {
 				flex-basis: 66%;
 			}
+		}
+	}
+	.exp {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		span {
+			margin-left: 0;
 		}
 	}
 	.footer {

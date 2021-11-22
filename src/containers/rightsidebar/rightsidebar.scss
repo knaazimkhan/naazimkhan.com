@@ -11,7 +11,7 @@
 		display: flex;
 		justify-content: center;
 		padding: 20px 0;
-		margin-top: 30%;
+		margin-top: 1rem;
 		color: rgb(43, 43, 43);
 		cursor: pointer;
 		position: absolute;
@@ -21,6 +21,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 3rem;
 		ul {
 			// border: 1px solid red;
 			display: flex;
@@ -39,6 +40,11 @@
 					transition: all 0.15s linear 0s;
 					&:hover {
 						background-color: rgb(255, 180, 0);
+						.tooltip {
+							visibility: visible;
+							transform: translateY(-23px);
+							opacity: 1;
+						}
 					}
 					&:hover svg {
 						color: rgb(43, 43, 43);
@@ -66,8 +72,18 @@
 				text-transform: capitalize;
 				font-size: 12px;
 				transition: all 0.4s ease-in-out 0s;
-				transform: translateY(30px);
+				transform: translateY(0px);
 				opacity: 0;
+				&::after {
+					content: '';
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					margin-left: -7px;
+					border-width: 6px;
+					border-style: solid;
+					border-color: rgb(43, 43, 43) transparent transparent;
+				}
 			}
 		}
 	}
