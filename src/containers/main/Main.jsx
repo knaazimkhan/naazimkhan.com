@@ -14,10 +14,20 @@ const Main = () => {
 				<div className='main__content__banner'>
 					<div className='banner__title'>
 						<h1>
+							Hi. <br />
 							I’m {data.name}
 							<br />
-							<span className='primary'>Full – Stack</span>{' '}
-							Developer
+							<span className='primary'>{'Full–Stack '}</span>
+							{'Developer '} <br />{' '}
+							<span style={{ fontWeight: 'normal' }}>
+								{'at '}
+							</span>
+							<a
+								className='company'
+								href='https://entrustglobalgroup.com/'
+							>
+								{data.company}
+							</a>
 						</h1>
 						<p>{data.bio}</p>
 						<div className='banner__btn'>
