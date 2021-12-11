@@ -4,8 +4,7 @@ import './main.scss';
 import NaazimKhan from '../../images/naazimkhan.jpg';
 
 import data from '../../data.json';
-import Education from '../../components/Education';
-import Experience from './../../components/Experience';
+import { Education, Experience } from '../../components';
 
 const Main = () => {
 	return (

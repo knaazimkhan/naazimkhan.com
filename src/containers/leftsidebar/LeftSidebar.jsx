@@ -1,16 +1,11 @@
 import React from 'react';
 import './leftsidebar.scss';
 
-import PersonalInfo from '../../components/PersonalInfo';
-import Language from '../../components/Language';
-import Skill from '../../components/Skill';
-import ExtraSkill from './../../components/ExtraSkill';
-
 import NaazimKhan from '../../images/naazimkhan.jpg';
-
 import ResumePdf from '../../assets/resume.pdf';
-
 import data from '../../data.json';
+
+import { PersonalInfo, Language, Skill, ExtraSkill } from '../../components';
 
 const LeftSidebar = () => {
 	console.log(data);
