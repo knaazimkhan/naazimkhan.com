@@ -24,6 +24,7 @@ const Main = () => {
 							<a
 								className='company'
 								href='https://entrustglobalgroup.com/'
+								target='_blank'
 							>
 								{data.company}
 							</a>
