@@ -25,6 +25,7 @@ const Main = () => {
 								className='company'
 								href='https://entrustglobalgroup.com/'
 								target='_blank'
+								rel='noreferrer'
 							>
 								{data.company}
 							</a>
