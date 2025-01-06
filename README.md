@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Modern Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and TailwindCSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🎨 Modern and clean design
+- 🌓 Dark/Light mode
+- 📱 Fully responsive
+- ⚡ Fast and optimized
+- 🎯 SEO friendly
+- 📧 Contact form with EmailJS integration
+- 🔄 Smooth animations
+- 🎨 Customizable theme
+- ♿ Accessible
 
-### `yarn start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Next.js 14 (App Router)
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- EmailJS
+- React Hook Form
+- Zod
+- React Icons
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `yarn test`
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-### `yarn build`
+3. Create a `.env.local` file in the root directory and add your EmailJS credentials:
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
+```bash
+pnpm dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Customization
 
-### `yarn eject`
+1. Update personal information:
+   - Edit the content in each section component under `src/components/sections/`
+   - Replace the profile image in the `public` directory
+   - Update the resume PDF in the `public` directory
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Theme customization:
+   - Modify colors and other theme variables in `src/app/globals.css`
+   - Update Tailwind configuration in `tailwind.config.ts`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Add/Remove sections:
+   - Modify the sections in `src/app/page.tsx`
+   - Create new section components in `src/components/sections/`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+├── src/
+│   ├── app/                 # Next.js app directory
+│   ├── components/          # React components
+│   │   ├── layout/         # Layout components
+│   │   ├── sections/       # Page sections
+│   │   └── ui/            # UI components
+│   ├── lib/                # Utility functions
+│   ├── types/              # TypeScript types
+│   └── hooks/              # Custom hooks
+├── public/                 # Static files
+└── ...config files
+```
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
