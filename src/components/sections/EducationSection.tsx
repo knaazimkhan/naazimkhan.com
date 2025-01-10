@@ -148,7 +148,7 @@ export const EducationSection = () => {
 
   return (
     <section id="education" className="py-20 px-4">
-      <GradientBackground variant="muted">
+      <GradientBackground variant="muted" className="py-5 dark:py-0">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation animation="slide" className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Education</h2>
@@ -166,4 +166,4 @@ export const EducationSection = () => {
       </GradientBackground>
     </section>
   );
-}; 
+};
