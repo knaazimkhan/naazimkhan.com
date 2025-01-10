@@ -46,7 +46,7 @@ export const ImageWithLoading = ({
         alt={alt}
         priority={priority}
         className={cn(isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-200", className)}
-        onLoadingComplete={() => setIsLoading(false)}
+        onLoad={() => setIsLoading(false)}
         onError={() => {
           setIsLoading(false);
           setHasError(true);
