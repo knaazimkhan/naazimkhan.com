@@ -129,7 +129,7 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-20 px-4">
       <GradientBackground className="py-5">
-        <div className="max-w-7xl mx-auto">
+        <div className="container max-w-7xl mx-auto">
           <ScrollAnimation animation="slide" className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">

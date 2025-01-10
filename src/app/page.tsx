@@ -7,7 +7,7 @@ import {
   SkillsSection,
   ExperienceSection,
   EducationSection,
-  TestimonialsSection,
+  // TestimonialsSection,
   ContactSection,
 } from '@/components/lazy';
 import { PageTransition } from "@/components/ui/page-transition";
@@ -62,11 +62,11 @@ export default function HomePage() {
             </Suspense>
           </ErrorBoundary>
 
-          <ErrorBoundary>
+          {/* <ErrorBoundary>
             <Suspense>
               <TestimonialsSection />
             </Suspense>
-          </ErrorBoundary>
+          </ErrorBoundary> */}
 
           <ErrorBoundary>
             <Suspense>
