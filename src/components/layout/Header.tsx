@@ -10,10 +10,10 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const navigation = [
   { name: "Home", href: "/" as Route },
-  { name: "Projects", href: "/projects" as Route },
-  { name: "Skills", href: "/skills" as Route },
-  { name: "Education", href: "/education" as Route },
-  { name: "Contact", href: "/contact" as Route },
+  { name: "Projects", href: "#projects" as Route },
+  { name: "Skills", href: "#skills" as Route },
+  { name: "Education", href: "#education" as Route },
+  { name: "Contact", href: "#contact" as Route },
 ] as const;
 
 export const Header = () => {
