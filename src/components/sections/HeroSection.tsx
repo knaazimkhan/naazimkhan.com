@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 // import { ScrollAnimation } from "@/components/ui/scroll-animation";
 // import { HoverCard } from "@/components/ui/hover-card";
 import { AnimatedText } from "@/components/ui/animated-text";
-import { ParallaxScroll } from "@/components/ui/parallax-scroll";
+// import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 import { GradientBackground } from "@/components/ui/gradient-background";
 import { HeroSectionSkeleton } from "@/components/ui/hero-section-skeleton";
-import { ImageWithLoading } from "@/components/ui/image-with-loading";
+// import { ImageWithLoading } from "@/components/ui/image-with-loading";
 import { useLoading } from "@/hooks/use-loading";
 
 const roles = [
@@ -85,18 +85,21 @@ export const HeroSection = () => {
   return (
     <GradientBackground className="min-h-screen flex items-center justify-center py-20 px-4">
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
-      
+
       <motion.div
         className="container mx-auto max-w-6xl"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
           <div className="space-y-8">
             <motion.div variants={itemVariants}>
               <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                Hi, I&apos;m <span className="bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text">Naazim Khan</span>
+                Hi, I&apos;m{" "}
+                <span className="bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text">
+                  Naazim Khan
+                </span>
               </h1>
               <div className="h-8 md:h-12">
                 <AnimatedText
@@ -115,9 +118,11 @@ export const HeroSection = () => {
 
             <motion.p
               variants={itemVariants}
-              className="text-base text-muted-foreground"
+              className="text-base text-muted-foreground text-wrap max-w-xl"
             >
-              Passionate about creating innovative web solutions with modern technologies, specializing in scalable applications and exceptional user experiences.
+              Passionate about creating innovative web solutions with modern
+              technologies, specializing in scalable applications and
+              exceptional user experiences.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex gap-4">
@@ -126,7 +131,7 @@ export const HeroSection = () => {
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection('projects');
+                  scrollToSection("projects");
                 }}
               >
                 View Projects
@@ -136,7 +141,7 @@ export const HeroSection = () => {
                 className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection('contact');
+                  scrollToSection("contact");
                 }}
               >
                 Contact Me
@@ -144,7 +149,7 @@ export const HeroSection = () => {
             </motion.div>
           </div>
 
-          <ParallaxScroll className="relative lg:block">
+          {/* <ParallaxScroll className="relative lg:block">
             <motion.div
               variants={itemVariants}
               className="relative w-[300px] md:w-[400px] aspect-square mx-auto rounded-full overflow-hidden shadow-2xl"
@@ -159,7 +164,7 @@ export const HeroSection = () => {
                 wrapperClassName="absolute inset-0"
               />
             </motion.div>
-          </ParallaxScroll>
+          </ParallaxScroll> */}
         </div>
       </motion.div>
     </GradientBackground>

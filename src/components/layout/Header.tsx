@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "@/components/ui/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import Image from "next/image";
+// import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" as Route },
@@ -20,7 +20,10 @@ export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm" suppressHydrationWarning>
+    <header
+      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm"
+      suppressHydrationWarning
+    >
       {/* Skip Link */}
       <Link
         href="#main-content"
@@ -29,22 +32,28 @@ export const Header = () => {
         Skip to main content
       </Link>
 
-      <nav 
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" 
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Main navigation"
         role="navigation"
       >
-        <div className="flex lg:flex-1 items-center">
-          <Image 
+        <div className="flex lg:flex-1 items-center gap-2 cursor-pointer">
+          {/* <Image 
             src="/profile/profile.jpeg"
             alt="Naazim Khan"
             width={35}
             height={35}
             className="rounded-full mr-2"
-          />
-          <Link 
-            href="/" 
-            className="-m-1.5 p-1.5 text-2xl font-bold"
+          /> */}
+          <div className="relative inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600">
+            <span className="font-medium text-gray-600 dark:text-gray-300">
+              NK
+            </span>
+            <span className="top-0 left-7 absolute  w-3 h-3 bg-green-400 border border-white dark:border-gray-800 rounded-full" />
+          </div>
+          <Link
+            href="/"
+            className="text-2xl font-bold"
             aria-label="Go to homepage"
             exact
           >
@@ -97,8 +106,8 @@ export const Header = () => {
       >
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-muted">
           <div className="flex items-center justify-between">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="-m-1.5 p-1.5 text-2xl font-bold"
               aria-label="Go to homepage"
               exact
